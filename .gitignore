@@ -1,6 +1,8 @@
 # ide files
 /.idea/
 /cmake-build-debug/
+*.glade#
+*/temp.c
 
 # Prerequisites
 *.d
