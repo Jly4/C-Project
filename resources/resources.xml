@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+<gresource prefix="/resources">
+    <file>img/main1.png</file>
+    <file>img/main2.png</file>
+    <file>txt/test.txt</file>
+</gresource>
+</gresources>
