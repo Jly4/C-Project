@@ -13,14 +13,14 @@ link_directories(${GTK3_LIBRARY_DIRS})
 set(RESOURCE_XML ${CMAKE_SOURCE_DIR}/resources/resources.xml)
 set(RESOURCE_C ${CMAKE_BINARY_DIR}/resources.c)
 
-# Сгенерируйте файл ресурсов
-add_custom_command(
-        OUTPUT ${RESOURCE_C}
-        COMMAND cd ${CMAKE_SOURCE_DIR}/resources
-        COMMAND glib-compile-resources ${RESOURCE_XML} --target=${RESOURCE_C} --generate-source
-        DEPENDS ${RESOURCE_XML}
-        COMMENT "Generating resource file ${RESOURCE_C}"
-)
+## Сгенерируйте файл ресурсов
+#add_custom_command(
+#        OUTPUT ${RESOURCE_C}
+#        COMMAND cd ${CMAKE_SOURCE_DIR}/resources
+#        COMMAND glib-compile-resources ${RESOURCE_XML} --target=${RESOURCE_C} --generate-source
+#        DEPENDS ${RESOURCE_XML}
+#        COMMENT "Generating resource file ${RESOURCE_C}"
+#)
 
 # Определите исходные файлы
 set(SOURCES
@@ -30,6 +30,7 @@ set(SOURCES
 )
 
 # Создайте исполняемый файл
-add_executable(${PROJECT_NAME} WIN32 ${SOURCES})
+#add_executable(${PROJECT_NAME} WIN32 ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME} ${GTK3_LIBRARIES})
