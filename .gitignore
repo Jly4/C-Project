@@ -2,7 +2,7 @@
 /.idea/
 /cmake-build-debug/
 *.glade#
-*/temp.c
+temp.c
 
 # Prerequisites
 *.d
